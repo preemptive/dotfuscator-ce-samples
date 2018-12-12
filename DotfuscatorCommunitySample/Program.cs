@@ -19,8 +19,47 @@ namespace DotfuscatorCommunitySample
         {
             Converse("Alice", "Bob");
 
+            VerifyTampering();
+            VerifyDebugging();
+
             Console.WriteLine("Press any key to exit...");
-            Console.ReadKey();
+            Console.Read();
+        }
+
+        public static void VerifyTampering()
+        {
+            // Dotfuscator will add Tamper detection and notification code here
+            // - configured in Dotfuscator CE in Injection > Checks
+        }
+
+        private static void OnTamperVerified(bool wasTampered)
+        {
+            if (wasTampered)
+            {
+                Console.WriteLine("App HAS been tampered with");
+            }
+            else
+            {
+                Console.WriteLine("App has NOT been tampered with");
+            }
+        }
+
+        public static void VerifyDebugging()
+        {
+            // Dotfuscator will add code here to detect if the application is being debugged
+            // - configured in Dotfuscator CE in Injection > Checks
+        }
+
+        private static void OnDebuggingVerified(bool isDebuggerRunning)
+        {
+            if (isDebuggerRunning)
+            {
+                Console.WriteLine("App IS running under a debugger");
+            }
+            else
+            {
+                Console.WriteLine("App is NOT running under a debugger");
+            }
         }
 
         public static bool OptIn()

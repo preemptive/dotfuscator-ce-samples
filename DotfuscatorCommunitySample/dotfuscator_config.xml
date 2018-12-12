@@ -4,11 +4,9 @@
   <input>
     <loadpaths />
     <asmlist>
-      <inputassembly refid="d4fec1b7-023c-48bd-ae68-babc4d0aaa9e">
+      <inputassembly refid="2820e99c-d7d3-40ef-8141-ea0aecd5176e">
         <option>honoroas</option>
         <option>stripoa</option>
-        <option>library</option>
-        <option>transformxaml</option>
         <file dir="${configdir}\bin\Release" name="DotfuscatorCommunitySample.exe" />
       </inputassembly>
     </asmlist>
@@ -33,6 +31,46 @@
     <option>version:v4</option>
     <option>dontsendtamper</option>
   </sos>
+  <extattributes>
+    <extattribute name="PreEmptive.Attributes.InsertTamperCheckAttribute">
+      <codetransformlist>
+        <codetransform name="analytics" />
+      </codetransformlist>
+      <type name="DotfuscatorCommunitySample.Hello">
+        <method name="VerifyTampering" signature="void()" />
+      </type>
+      <propertylist>
+        <property name="Action" value="None" />
+        <property name="ActionProbability" value="1" />
+        <property name="ApplicationNotificationSinkName" value="OnTamperVerified" />
+        <property name="ApplicationNotificationSinkOwner" value="" />
+        <property name="ApplicationNotificationSinkElement" value="Method" />
+        <property name="ExtendedKeySourceName" value="" />
+        <property name="ExtendedKeySourceOwner" value="" />
+        <property name="ExtendedKeySourceElement" value="None" />
+        <property name="ExtendedKeyMethodArguments" value="" />
+      </propertylist>
+    </extattribute>
+    <extattribute name="PreEmptive.Attributes.DebuggingCheckAttribute">
+      <codetransformlist>
+        <codetransform name="analytics" />
+      </codetransformlist>
+      <type name="DotfuscatorCommunitySample.Hello">
+        <method name="VerifyDebugging" signature="void()" />
+      </type>
+      <propertylist>
+        <property name="Action" value="None" />
+        <property name="ActionProbability" value="1" />
+        <property name="ApplicationNotificationSinkName" value="OnDebuggingVerified" />
+        <property name="ApplicationNotificationSinkOwner" value="" />
+        <property name="ApplicationNotificationSinkElement" value="Method" />
+        <property name="ExtendedKeySourceName" value="" />
+        <property name="ExtendedKeySourceOwner" value="" />
+        <property name="ExtendedKeySourceElement" value="None" />
+        <property name="ExtendedKeyMethodArguments" value="" />
+      </propertylist>
+    </extattribute>
+  </extattributes>
   <smartobfuscation>
     <smartobfuscationreport verbosity="all" overwrite="false" />
   </smartobfuscation>
