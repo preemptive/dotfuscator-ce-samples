@@ -1,20 +1,32 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# PreEmptive Protection - Dotfuscator Community Samples
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+This repo contains samples that demonstrate configuring [PreEmptive Protection - Dotfuscator Community](https://www.preemptive.com/products/dotfuscator/overview) for various types of .NET applications. 
+The samples in this repo are each organized into their own directory.
+For sample-specific instructions, refer to the the README in each sample's directory.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+## Samples in this repo
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+The following samples are available in this repo:
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://www.visualstudio.com/en-us/docs/git/create-a-readme). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+* [DotfuscatorCommunitySample](DotfuscatorCommunitySample/README.md) demonstrates using [Tamper check](https://www.preemptive.com/dotfuscator/ce/docs/help/checks_tamper.html) and [Debug Check](https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html) to protect an app.
+
+This repo has tags that correspond to the Visual Studio version and the earliest Dotfuscator Community version the samples are compatible with. 
+
+## Samples in other repos
+
+### Xamarin 
+
+Samples for integrating and configuring Dotfuscator protection for Xamarin apps can be found in the following repos:
+* [protected-bugsweeper](https://github.com/preemptive/protected-bugsweeper) demonstrates integrating Dotfuscator into the build process for a Xamarin app and then enhancing the protection with Tamper Check and configured responses.
+* [protected-TodoAzureAuth](https://github.com/preemptive/Protected-TodoAzureAuth) accompanies [Detect and Respond to Rooted Android Devices from Xamarin Apps](https://msdn.microsoft.com/en-US/magazine/mt846653). 
+This sample demonstrates protecting a Xamarin app with Root Checks and the different methods for responding to a rooted Android device.
+
+### Checks
+
+Samples for protecting applications with [Checks](https://www.preemptive.com/dotfuscator/pro/userguide/en/protection_checks_overview.html) can be found in the following repos:
+* [protected-adventureworks](https://github.com/preemptive/protected-adventureworks) provides an example of protecting a WPF app with Dotfuscator's Runtime Checks.
+* [dot-check-sample](https://github.com/preemptive/dot-check-sample) is a WPF application designed to demonstrate use cases and patterns for Dotfuscator's [anti-debug protections](https://www.preemptive.com/dotfuscator/pro/userguide/en/protection_checks_debug.html).
+
+### Dotfuscator Professional
+
+If you are using Dotfuscator Professional, see the [Dotfuscator Pro Samples](https://github.com/preemptive/dotfuscator-pro-samples) repo.
