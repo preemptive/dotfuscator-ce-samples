@@ -8,7 +8,7 @@ For sample-specific instructions, refer to the the README in each sample's direc
 
 The following samples are available in this repo:
 
-* [DotfuscatorCommunitySample](DotfuscatorCommunitySample/README.md) demonstrates using [Tamper check](https://www.preemptive.com/dotfuscator/ce/docs/help/checks_tamper.html) and [Debug Check](https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html) to protect an app.
+* [DotfuscatorCommunitySample](DotfuscatorCommunitySample) demonstrates using [Tamper check](https://www.preemptive.com/dotfuscator/ce/docs/help/checks_tamper.html) and [Debug Check](https://www.preemptive.com/dotfuscator/ce/docs/help/checks_debug.html) to protect an app.
 
 This repo has tags that correspond to the Visual Studio version and the earliest Dotfuscator Community version the samples are compatible with. 
 
