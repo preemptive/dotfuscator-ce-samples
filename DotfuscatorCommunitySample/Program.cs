@@ -29,7 +29,7 @@ namespace DotfuscatorCommunitySample
         public static void VerifyTampering()
         {
             // Dotfuscator will add Tamper detection and notification code here
-            // - configured in Dotfuscator Community in Injection > Checks
+            // - configured in Dotfuscator Community in Checks > Configuration
         }
 
         private static void OnTamperVerified(bool wasTampered)
@@ -47,7 +47,7 @@ namespace DotfuscatorCommunitySample
         public static void VerifyDebugging()
         {
             // Dotfuscator will add code here to detect if the application is being debugged
-            // - configured in Dotfuscator Community in Injection > Checks
+            // - configured in Dotfuscator Community in Checks > Configuration
         }
 
         private static void OnDebuggingVerified(bool isDebuggerRunning)
