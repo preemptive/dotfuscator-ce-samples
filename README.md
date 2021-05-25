@@ -1,6 +1,8 @@
 # PreEmptive Protection - Dotfuscator Community Samples
 
 This repo contains samples that demonstrate configuring [PreEmptive Protection - Dotfuscator Community](https://www.preemptive.com/products/dotfuscator/overview) for various types of .NET applications. 
+For instructions on installing Dotfuscator Community, see [Install Dotfuscator Community](https://docs.microsoft.com/en-us/visualstudio/ide/dotfuscator/install).
+
 The samples in this repo are each organized into their own directory.
 For sample-specific instructions, refer to the the README in each sample's directory.
 
