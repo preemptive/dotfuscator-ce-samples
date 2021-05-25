@@ -1,4 +1,4 @@
-﻿// Copyright (c) 2017 PreEmptive Solutions; All Right Reserved, http://www.preemptive.com/
+﻿// Copyright (c) 2021 PreEmptive Solutions; All Right Reserved, http://www.preemptive.com/
 //
 // This source is subject to the Microsoft Public License (MS-PL).
 // Please see the License.txt file for more information.
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 
 [assembly: AssemblyProduct("DotfuscatorCommunityEdition")]
 [assembly: AssemblyCompany("PreEmptive Solutions, LLC")]
-[assembly: AssemblyCopyright("Copyright 2002-2017, All Rights Reserved")]
+[assembly: AssemblyCopyright("Copyright 2002-2021, All Rights Reserved")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 
