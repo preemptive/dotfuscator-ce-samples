@@ -62,11 +62,6 @@ namespace DotfuscatorCommunitySample
             }
         }
 
-        public static bool OptIn()
-        {
-            return true;
-        }
-
         private static void Converse(string name1, string name2)
         {
             Friendly friend1 = new Friendly(name1);
