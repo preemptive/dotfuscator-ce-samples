@@ -25,6 +25,9 @@ Samples for integrating and configuring Dotfuscator protection for Xamarin apps 
 * [protected-TodoAzureAuth](https://github.com/preemptive/Protected-TodoAzureAuth) accompanies [Detect and Respond to Rooted Android Devices from Xamarin Apps](https://msdn.microsoft.com/en-US/magazine/mt846653). 
   This sample demonstrates protecting a Xamarin app with Root Checks and the different methods for responding to a rooted Android device.
 
+    * **Note**: This sample's repository has been archived.
+      While the sample still demonstrates how to use Dotfuscator Community to detect a rooted Android device, the ability to save and restore to-do list items is no longer supported.
+
 ### Checks
 
 Samples for protecting applications with [Checks](https://www.preemptive.com/dotfuscator/pro/userguide/en/protection_checks_overview.html) can be found in the following repos:
