@@ -1,4 +1,4 @@
-﻿// Copyright (c) 2017 PreEmptive Solutions; All Right Reserved, http://www.preemptive.com/
+﻿// Copyright (c) 2021 PreEmptive Solutions; All Right Reserved, http://www.preemptive.com/
 //
 // This source is subject to the Microsoft Public License (MS-PL).
 // Please see the License.txt file for more information.
@@ -29,7 +29,7 @@ namespace DotfuscatorCommunitySample
         public static void VerifyTampering()
         {
             // Dotfuscator will add Tamper detection and notification code here
-            // - configured in Dotfuscator CE in Injection > Checks
+            // - configured in Dotfuscator Community in Checks > Configuration
         }
 
         private static void OnTamperVerified(bool wasTampered)
@@ -47,7 +47,7 @@ namespace DotfuscatorCommunitySample
         public static void VerifyDebugging()
         {
             // Dotfuscator will add code here to detect if the application is being debugged
-            // - configured in Dotfuscator CE in Injection > Checks
+            // - configured in Dotfuscator Community in Checks > Configuration
         }
 
         private static void OnDebuggingVerified(bool isDebuggerRunning)
@@ -60,11 +60,6 @@ namespace DotfuscatorCommunitySample
             {
                 Console.WriteLine("App is NOT running under a debugger");
             }
-        }
-
-        public static bool OptIn()
-        {
-            return true;
         }
 
         private static void Converse(string name1, string name2)
